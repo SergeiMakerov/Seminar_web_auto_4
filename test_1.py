@@ -8,7 +8,7 @@ with open("testdata.yaml") as f:
     testdata = yaml.safe_load(f)
 
 
-# создаётся новый пост, а потом проверяется его наличие на сервере по полю «описание»
+
 def test_step1(browser):
     logging.info("Test_1 step_1 starting")
     testpage = OperationsHelper(browser)
