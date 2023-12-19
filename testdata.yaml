@@ -1,6 +1,10 @@
-address: https://test-stand.gb.ru/
+address: "https://test-stand.gb.ru/"
+url: "https://test-stand.gb.ru/gateway/login"
+url_posts: "https://test-stand.gb.ru/api/posts"
 browser: chrome
-sleep_time: 0
+sleep_time: 3
 login: "Wolf"
 password: "279ede0c6b"
 title: "Congratulations"
+description: "Create new post"
+content: "You can add something text here"
