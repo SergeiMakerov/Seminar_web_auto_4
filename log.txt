@@ -1,0 +1,39 @@
+2023-12-19 22:02:15 INFO ====== WebDriver manager ======
+2023-12-19 22:02:16 INFO Get LATEST chromedriver version for google-chrome
+2023-12-19 22:02:17 INFO Get LATEST chromedriver version for google-chrome
+2023-12-19 22:02:17 INFO Driver [C:\Users\User\.wdm\drivers\chromedriver\win64\120.0.6099.109\chromedriver-win32/chromedriver.exe] found in cache
+2023-12-19 22:02:19 INFO Test_1 step_1 starting
+2023-12-19 22:02:27 INFO Test_1 step_2 starting
+2023-12-19 22:02:30 ERROR Find element exception
+Traceback (most recent call last):
+  File "C:\Users\User\Seminar_web_auto_4\BaseApp.py", line 13, in find_element
+    element = WebDriverWait(self.driver, time).until(EC.presence_of_element_located(locator),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\support\wait.py", line 101, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: Can't find element by locator ('xpath', '//*[@id="create-btn"]')
+Stacktrace:
+	GetHandleVerifier [0x00B26EE3+174339]
+	(No symbol) [0x00A50A51]
+	(No symbol) [0x00766FF6]
+	(No symbol) [0x00799876]
+	(No symbol) [0x00799C2C]
+	(No symbol) [0x007CBD42]
+	(No symbol) [0x007B7054]
+	(No symbol) [0x007CA104]
+	(No symbol) [0x007B6DA6]
+	(No symbol) [0x00791034]
+	(No symbol) [0x00791F8D]
+	GetHandleVerifier [0x00BC4B1C+820540]
+	sqlite3_dbdata_init [0x00C853EE+653550]
+	sqlite3_dbdata_init [0x00C84E09+652041]
+	sqlite3_dbdata_init [0x00C797CC+605388]
+	sqlite3_dbdata_init [0x00C85D9B+656027]
+	(No symbol) [0x00A5FE6C]
+	(No symbol) [0x00A583B8]
+	(No symbol) [0x00A584DD]
+	(No symbol) [0x00A45818]
+	BaseThreadInitThunk [0x7577FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x777B7C6E+286]
+	RtlGetAppContainerNamedObjectPath [0x777B7C3E+238]
+
